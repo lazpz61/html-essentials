@@ -119,11 +119,239 @@ Entitys
 
 -->
 
+<!-- Anchor Tags
 
-
-
+These are hyperlinks to send to websites.
 
 -->
+
+<a href="https:example.com">this is a link</a>
+
+
+<p>this is a sentence with an <a href="https//google.com">A</a> Link</p>
+
+HTTP - Hypertext transport protocol.
+
+
+HTTPS - Hypertext transport protocol the s stands for Secure.
+
+<!-- URL Paths -->
+
+Relative_URL = this is used to point to specify a path to a file. 
+
+
+the slashes in the url means to look inside or go a level deeper. 
+
+the / goes tot eh root level of the directory the .. means go up a level. 
+
+
+<!-- Navigation Bars -->
+
+<nav role="navigation" aria-label="main menu">This allows the browser to know that this is the navigation Bars
+    so that is complies with the ARIA standards.
+</nav>
+
+
+<!-- 4 attributes for img -->
+
+src -  which source to load 
+width -  width of the image no units needed, its understood that it pixels.
+height -  the weight of the image no units needed, its understood that it pixels.
+alt -  alternate, acts a substitue for the image to experience for the image, usually for the ARIA standards.
+ leaving the alt blank is best, if you dont add it theres a chance that the name of the image might get read aloud.
+
+ <!-- Image formate -->
+
+ best goals is high quality small file size.
+
+ 4 main file formats - 
+ 
+ Gif -  does well compressing large areas of a single color.
+
+ - limited color space of 256 colors.
+ - can do transparency, with jagged edges.
+ - can have multiple frames and make a little movie.
+
+ SVG - great for logos, icons, etc.
+- vector file,it contains instructions for a drawing, they are made of vector and math,
+can scale to be large or small, no pixels, file size small scalable vector graphic - programmin language for graphics.
+
+JPG 
+- image format for comrpessing photos. 
+- larger files make the site slow
+-can be compressed, size and quality. 
+
+PNG 
+
+- newer format, good solution when you have a photo and need a part to be transparent.
+-good at compression, photos and images.
+
+<!-- Responsive Imagees -->
+
+
+srcset="this is where you place a file that gives the browser the choice to choode another photo resolution."
+
+<!-- Responsive Width -->
+
+- this is when you want the browser to consider the width of the viewport,
+and to choose a file based on the size of the screen as well as density.
+
+The sizes attribute tells the browser what size to use depeneding on the vieport.
+
+<!-- Responsive Pictures -->
+
+<picture>
+    <source 
+    media="(min-width:600px)"
+    srcset="this is where you want to create alternate options">
+    <source srcset="this can be another image ">
+    <img src="url-to-a-file" >
+</picture>
+
+
+<!-- Figure and Figcaption -->
+<figure>
+
+    <img src="source file">
+
+    <figcaption>
+        this is where you want to inclide a caption for the photo
+    </figcaption>
+</figure>
+
+This gives the browser to know that these two are related.
+
+<figure> For anything that appears as a figure illustrating something</figure>
+
+<figcaption> for demonstration of a concept which needs a caption</figcaption>
+
+<!-- Audio -->
+
+<audio src="audio/file">this is the audio element and allows for you to use a souce attribute</audio>
+
+we need to allow the browser to use controls to play it and pause it and fast forward. 
+
+<audio controls src="file."
+
+controls gives an audio player of the audio. 
+
+<audio src="audio.mp3" loop></audio> <-- loop will make the file loop when it gets to the end of the file. 
+ 
+autoplay will allow it to play as soon as it gets to the wewbpage.
+
+we have opening and closing to specify the source elements. 
+
+MP3 supported in most browsers.
+
+<!-- Video -->
+
+<video src="file" controls "to place a control on the video"> this is the video element</video>
+
+
+480p means that there are 480 lines of resolution. 
+
+H.264 codec currently has the widest support across browsers.
+
+AV1 is a royalty free codec.
+
+<!-- Captions and Subtitles -->
+
+<track src="this is used to point to the file itslef"> WBVTT - Web Video Text Tracks
+
+Kind - used to tell the browser what it is
+Label - what you want to use as a language
+srclang- language
+default- to use by default
+
+vtt file - tells the user what is happening descriptively in the video. 
+
+kind="chapters" allows user to jump from one section to another in a video. 
+
+<!-- Embedding other media through iframes -->
+
+embedding - placing content from one sire into the bodty of a page on another site. 
+
+<iframe> this is for video embedding into your html</iframe>
+
+<!-- Supporting Languages -->
+
+lang attribute is used to set the language in the elements we want to apply the language to.
+
+lang="en-US" -  united states
+lang="en-GB" -  great britains
+
+colour - en-GB
+color - en-US
+
+lang attribute is a universal attribute. 
+
+dir - specificies the direction of the language. 
+
+
+html lang="ar" dir="rtl"
+
+charset attribute - deifnes the alphabet or set of characters for the script language.
+
+
+ASCII - an encoding standard limites to 128 character, focused on the needs of the certain European languages.
+
+Unicode - utf, a universal standard for characters encompassing many languages.
+
+<meta charset="UTF-8"> <-- this needs to go into the <head> element in the html code. 
+
+<!-- Generis elements: div and span -->
+
+<div>divider to create sections to seperate everything.</div>
+
+div is a block level element.
+<span></span>
+
+span is an inline element. 
+
+dont use divs and spans for everything. 
+
+div and span can take a the global attributes -  class, id, lang, aria roles. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
