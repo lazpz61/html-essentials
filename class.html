@@ -231,11 +231,11 @@ This gives the browser to know that these two are related.
 
 we need to allow the browser to use controls to play it and pause it and fast forward. 
 
-<audio controls src="file."
+<audio controls src="file."></audio>
 
 controls gives an audio player of the audio. 
 
-<audio src="audio.mp3" loop></audio> <-- loop will make the file loop when it gets to the end of the file. 
+audio src="audio.mp3" loop>-- loop will make the file loop when it gets to the end of the file. 
  
 autoplay will allow it to play as soon as it gets to the wewbpage.
 
@@ -245,7 +245,7 @@ MP3 supported in most browsers.
 
 <!-- Video -->
 
-<video src="file" controls "to place a control on the video"> this is the video element</video>
+<video src="file" controls to place a control on the video> this is the video element</video>
 
 
 480p means that there are 480 lines of resolution. 
@@ -297,7 +297,7 @@ ASCII - an encoding standard limites to 128 character, focused on the needs of t
 
 Unicode - utf, a universal standard for characters encompassing many languages.
 
-<meta charset="UTF-8"> <-- this needs to go into the <head> element in the html code. 
+<meta charset="UTF-8"> -- this needs to go into the <head> element in the html code. 
 
 <!-- Generis elements: div and span -->
 
@@ -311,6 +311,115 @@ span is an inline element.
 dont use divs and spans for everything. 
 
 div and span can take a the global attributes -  class, id, lang, aria roles. 
+
+<!-- The HTML Page and structure -->
+
+hitting a URL the URL sends a request to an HTML file.
+
+A server returns a single HTML file. 
+
+Every html must have an HTML Doctype declaration - defines which era this html file is from.
+
+
+<!doctype  html>
+<html lang="en-US" dir="ltr">
+    <head> -- this is all the information that the browser needs to know, though it wont be displayed on the page.
+    <body>
+        contains all the content that will be displayed on the page.
+
+        <h1>This is a header tag</h1>
+        <p>This is a paragraph tag.</p>
+    </body>
+    </head>
+
+</html>
+
+<!-- Document Head -->
+
+The Meta Element - only used inside the head. conveys meta data about the page. 
+
+<!doctype  html>
+<html lang="en-US" dir="ltr">
+    <head> -- this is all the information that the browser needs to know, though it wont be displayed on the page.
+        <meta charset="UTF-8" name="viewport" content="width=device-width, intiail-scale=1">
+        <meta name="description" content="A description of the site that will show up in the search engine results">
+        <title> this is the title for the web page for the browser</title>
+        <link href="main.css" rel="stylesheet">
+        <script src="my_javascript.js">is the last tag used inside the head tags</script>
+    </head>
+    <body>
+        contains all the content that will be displayed on the page.
+
+        <h1>This is a header tag</h1>
+        <p>This is a paragraph tag.</p>
+    </body>
+    
+</html>
+
+The Link Element - Linkes to load other assets we want to load. 
+
+The rel attribute - tells the browser what kind of asset it is. 
+
+The href attribute - provide the url to the asset. 
+
+<!-- Structuring the content -->
+
+6 elements inside the body -  main, header, footer, article, section, aside.
+
+An aside - Marks content that is off to the side, or not the main attraction. 
+
+<!-- Examples of putting it all together -->
+
+look at other pages to learn from the developer tools. 
+
+<!-- HTML form basics -->
+
+<form action="success.html" method=""> 
+    <label for="email">name</label>
+    <input id="email" name="name" type="text">
+    <label>email</label> 
+    <input name="email"  type="email" required
+    placeholder="me@example.com">
+    <button type="submit">Words to say on button</button>
+</form>
+
+different types of form inputs - password, search , and telephone number
+
+form element -  text = this is for inputting text into the  form. 
+
+
+to put a size we can add cols and rows for the texarea.
+
+for - date, color, file. for file there is an accept attribute that allows you to place multiple files into the form.
+
+for checkbox, selectlist -  its a dropdown list, uses fieldset and a legend. 
+
+<!-- When to use tables -->
+
+<table>this wrapes the whole table</table>
+
+<tr>wraps around a set of eleemnts, defining them as belonging to the same row -  the attributes are colspan, rowspan, headers</tr>
+
+<th>table header defines a heard for a column -  the attributes are colspan, rowspan, scope</th>
+
+<td>table data marks the actual bits of a data.</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
